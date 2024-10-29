@@ -6,6 +6,7 @@ Optimization is the methodological enhancement of a state or a system. It is a m
 ## Optimal Control Problem (solver: OSQP)
 The optimization-based trajectory is expressed by the trajectory planning task as an optimal control problem (OCP).
 The OCP can be solved using SQP or OSQP. In this project, OSQP is used to find the optimal control points for the vehicle.
+
 OSQP solves the convex quadratic optimization problem: [OSQP-CPP] (https://github.com/google/osqp-cpp)
 ## Vehicle model
 The vehicle mode used for the trajectory planner is a Simple Kinematic Model
