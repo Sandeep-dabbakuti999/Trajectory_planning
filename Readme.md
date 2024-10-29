@@ -11,8 +11,8 @@ OSQP solves the convex quadratic optimization problem: [OSQP-CPP] (https://githu
 ## Dynamic Vehicle model
 The vehicle mode used for the trajectory planner is a Dynamic model of a vehicle.A Dynamic model is obtained by considering the slipangle on the vehicle at higher velocities and forces on the bicycle model. 
 #### Assumptions:
-. Only front wheel steering angle.
-. Longitudinal slip on the vehicle tire is zero.
+* Only front wheel steering angle.
+* Longitudinal slip on the vehicle tire is zero.
 
 <img src="Images/Dznamic.jpg" width=450 height=360>
 
@@ -24,6 +24,6 @@ The first input of the trajectory is applied to the system.The whole process is 
 
 ## Kinematic Vehicle MOdel
 A kinematic model is a pure mathematical model without considering the forces acting on the vehicle. 
-. The kinematic model is more accurate with lower distances and for larger discretized time.
-. Computational time and complexity is lower.
+* The kinematic model is more accurate with lower distances and for larger discretized time.
+* Computational time and complexity is lower.
 <img src="https://github.com/user-attachments/assets/2de6605e-24f0-4008-8fbc-350c66908934" width=420 height=360>
