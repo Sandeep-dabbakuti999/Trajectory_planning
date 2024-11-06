@@ -27,3 +27,9 @@ A kinematic model is a purely mathematical model without considering the forces 
 * The kinematic model is more accurate with lower distances and for larger discretized time.
 * Computational time and complexity are lower.
 <img src="https://github.com/user-attachments/assets/2de6605e-24f0-4008-8fbc-350c66908934" width=420 height=360>
+
+$\frac{\partial x}{\partial t}$ = $v x $\sin(\theta)$$
+$\frac{\partial y}{\partial t}$ = $v x $\cos(\theta)$$
+$\frac{\partial \theta}{\partial t}$ = $v x $\tan(\delta)/L$$
+$\frac{\partial v}{\partial t}$ = $a$
+
