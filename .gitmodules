@@ -1,3 +1,0 @@
-[submodule "External/OSQP"]
-	path = External/OSQP
-	url = https://github.com/google/osqp-cpp.git
