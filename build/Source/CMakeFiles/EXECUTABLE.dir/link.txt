@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/EXECUTABLE.dir/main.cpp.o  -o EXECUTABLE  ../OPT/libLIBRARY.a 
