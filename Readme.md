@@ -23,7 +23,7 @@ Model predictive control (MPC) works on the principle of predicting the future b
 The first input of the trajectory is applied to the system. The whole process is repeated again until the next control point.
 
 <div align="center">
-<img src="Images/MPC.jpg" width=360 height=270>
+<img src="Images/MPC.jpg" width=360 height=360>
 </div>
 
 ## Kinematic Vehicle Model
@@ -32,7 +32,7 @@ A kinematic model is a purely mathematical model without considering the forces 
 * Computational time and complexity are lower.
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/2de6605e-24f0-4008-8fbc-350c66908934" width=420 height=420>
+<img src="https://github.com/user-attachments/assets/2de6605e-24f0-4008-8fbc-350c66908934" width=420 height=520>
 </div>
 $$
 \frac{\partial x}{\partial t} = V \cdot \sin(\theta)
