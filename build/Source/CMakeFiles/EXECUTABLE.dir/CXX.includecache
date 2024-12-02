@@ -6,3 +6,13 @@
 
 #IncludeRegexTransform: 
 
+../OPT/Kinematicmodel.h
+iostream
+-
+
+/home/sandeep/Trajectory_planning/Source/main.cpp
+iostream
+-
+Kinematicmodel.h
+-
+
