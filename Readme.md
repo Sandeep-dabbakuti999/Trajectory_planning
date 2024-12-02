@@ -26,7 +26,7 @@ The first input of the trajectory is applied to the system. The whole process is
 A kinematic model is a purely mathematical model without considering the forces acting on the vehicle. 
 * The kinematic model is more accurate with lower distances and for larger discretized time.
 * Computational time and complexity are lower.
-<img src="https://github.com/user-attachments/assets/2de6605e-24f0-4008-8fbc-350c66908934" width=420 height=360>
+<img src="https://github.com/user-attachments/assets/2de6605e-24f0-4008-8fbc-350c66908934" align="Center" width=420 height=360>
 
 $$
 \frac{\partial x}{\partial t} = V \cdot \sin(\theta)
