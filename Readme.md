@@ -47,8 +47,8 @@ $$
 ## Variables and Parameters
 
 - **\(x, y\):** Position of the vehicle in a 2D plane.
-- **\($$(\theta\)$$ ):** Heading angle (orientation) of the vehicle in radians.
+- **\($$\theta\$$ ):** Heading angle (orientation) of the vehicle in radians.
 - **\(V\):** Velocity (speed) of the vehicle.
-- **\(\delta\):** Steering angle of the front wheels.
+- **\($$\delta\$$):** Steering angle of the front wheels.
 - **\(L\):** Wheelbase of the vehicle (distance between the front and rear axles).
 - **\(a\):** Acceleration of the vehicle.
