@@ -50,7 +50,7 @@ $$
 \frac{\partial v}{\partial t} = a
 $$
 
-## Variables and Parameters
+### Variables and Parameters
 
 - **\(x, y\):** Position of the vehicle in a 2D plane.
 - **\($$\theta\$$ ):** Heading angle (orientation) of the vehicle in radians.
