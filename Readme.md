@@ -8,7 +8,7 @@ The optimization-based trajectory is expressed by the trajectory planning task a
 The OCP can be solved using SQP or OSQP. In this project, OSQP is used to find the optimal control points for the vehicle.
 
 OSQP solves the convex quadratic optimization problem: [OSQP-CPP] (https://github.com/google/osqp-cpp)
-## Dynamic Vehicle model
+### Dynamic Vehicle model
 The vehicle mode used for the trajectory planner is a Dynamic model of a vehicle. A Dynamic model is obtained by considering the slip angle on the vehicle at higher velocities and forces on the bicycle model. 
 #### Assumptions:
 * Only front wheel steering angle.
