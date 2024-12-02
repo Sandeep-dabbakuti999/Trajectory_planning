@@ -14,13 +14,17 @@ The vehicle mode used for the trajectory planner is a Dynamic model of a vehicle
 * Only front wheel steering angle.
 * Longitudinal slip on the vehicle tire is zero.
 
+<div align="center">
 <img src="Images/Dznamic.jpg" width=360 height=270>
+</div>
 
 # Model Predictive controller (MPC-Tracker)
 Model predictive control (MPC) works on the principle of predicting the future behavior of a controlled system over a finite time horizon and computing an optimal control input. The calculated control input satisfies the constraints of the control system while minimizing the cost function. 
 The first input of the trajectory is applied to the system. The whole process is repeated again until the next control point.
 
+<div align="center">
 <img src="Images/MPC.jpg" width=360 height=270>
+</div>
 
 ## Kinematic Vehicle Model
 A kinematic model is a purely mathematical model without considering the forces acting on the vehicle. 
@@ -28,7 +32,7 @@ A kinematic model is a purely mathematical model without considering the forces 
 * Computational time and complexity are lower.
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/2de6605e-24f0-4008-8fbc-350c66908934" width=420 height=360>
+<img src="https://github.com/user-attachments/assets/2de6605e-24f0-4008-8fbc-350c66908934" width=420 height=420>
 </div>
 $$
 \frac{\partial x}{\partial t} = V \cdot \sin(\theta)
