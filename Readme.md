@@ -35,7 +35,6 @@ A kinematic model is a purely mathematical model without considering the forces 
 <img src="https://github.com/user-attachments/assets/2de6605e-24f0-4008-8fbc-350c66908934" width=360 height=270>
 </div>
 
-
 $$
 \frac{\partial x}{\partial t} = V \cdot \sin(\theta)
 $$
