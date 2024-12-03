@@ -32,7 +32,7 @@ A kinematic model is a purely mathematical model without considering the forces 
 * Computational time and complexity are lower.
 
 <div align="center">
-<img src="https://github.com/user-attachments/assets/2de6605e-24f0-4008-8fbc-350c66908934" width=360 height=270>
+<img src="https://github.com/user-attachments/assets/2de6605e-24f0-4008-8fbc-350c66908934" width=360 height=290>
 </div>
 
 $$
