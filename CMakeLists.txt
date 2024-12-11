@@ -7,15 +7,5 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(LIBRARY_NAME LIBRARY)
 set(EXECUTABLE_NAME EXECUTABLE)
-include(FetchContent)
-FetchContent_Declare(
-    osqp-cpp
-    GIT_Repository https://github.com/google/osqp-cpp.git
-    
-    GIT_SHALLOW TRUE)
-FetchContent_MakeAvailable(osqp-cpp)
-
-
-add_subdirectory(OPT)
+add_subdirectory(DataSET)
 add_subdirectory(Source)
-

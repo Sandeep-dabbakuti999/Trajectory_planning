@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/EXECUTABLE.dir/main.cpp.o"
+  "CMakeFiles/EXECUTABLE.dir/main.cpp.o.d"
   "EXECUTABLE"
   "EXECUTABLE.pdb"
 )

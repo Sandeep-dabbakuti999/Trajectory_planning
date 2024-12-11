@@ -1,2 +1,0 @@
-/usr/bin/ar qc libLIBRARY.a  CMakeFiles/LIBRARY.dir/Kinematicmodel.cpp.o
-/usr/bin/ranlib libLIBRARY.a
