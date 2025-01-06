@@ -1,13 +1,21 @@
 #include <iostream>
 #include <vector>
 #include <mutex>
+#include <cmath>
+#include <algorithm>
+#include <fstream>
 #include "Data.h"
 using namespace std;
+
 mutex mtx;
-template <typename S>
- vector<S> CartesianCoord<S>::load(string file_name){
-    lock_guard<mutex> lock (mtx);
-    t_course.open(file_name);
+
+//Loading a file using a file path
+ void CartesianCoord::load(const string file_name){
+    lock_guard<mutex> lock(mtx);
+    ifstream t_course(file_name);
+    if(! t_course.is_open()){
+        cout<<"The file cant be opened"<<endl;
+    };
     double i_x,ax,bx,cx,dx;
     while(t_course>>i_x>>ax>>bx>>cx>>dx){
         t_index.push_back(i_x);
@@ -16,25 +24,18 @@ template <typename S>
         c_t.push_back(cx);
         d_t.push_back(dx);
     };
+  
 };
 
 
-template <typename D>
-void CartesianCoord<D>::print()
-{   
-    lock_guard<mutex> lock (mtx);
-    for (auto val : t_index)
-    {
-        cout << val << endl;
-    };
-};
-/*
-void CartesianCoord::Resolution(int N){
-    int inc=(*x_index.begin()-*x_index.end())/N*100;
-    double sum=0;
-    while(sum != *x_index.end()){
-        sum+=*x_index.begin();
-        hrd.push_back(sum);
+//Increment the resolution as per the resolution value
+void CartesianCoord::Resolution(vector<double> ind,int N){
+    lock_guard<mutex> lock(mtx);
+    double inc=(ind.back()-ind.front())/(N*100);
+    double sum=ind.front();
+    while(sum < ind.back()){
+       hrd.push_back(sum);
+       sum+=inc; 
     };
 };
 
@@ -51,15 +52,14 @@ int find_index(vector <double> indexes, int val){
     return index;
 };
 
-
+// The cubic spline interpolation between two GNSS coordinates 
 void CartesianCoord::Interpolation(){
     for(int i=0;i<hrd.size();i++){
-        int index=find_index(x_index,hrd.at(i));
-        double diff=hrd.at(i)-x_index.at(index);
-        double X=a_x.at(index)*pow(diff,3)+b_x.at(index)*pow(diff,2)+c_x.at(index)*pow(diff,1)+d_x.at(index);
-        double Y=a_y.at(index)*pow(diff,3)+b_y.at(index)*pow(diff,2)+c_y.at(index)*pow(diff,1)+d_y.at(index);
-        X_coord.push_back(X);
-        Y_coord.push_back(Y);
+        // int index=find_index(t_index,hrd.at(i));
+        // double diff=hrd.at(i)-t_index.at(index);
+        // double X=a_t.at(index)*pow(diff,3)+b_t.at(index)*pow(diff,2)+c_t.at(index)*pow(diff,1)+d_t.at(index);
+        // double Y=a_t.at(index)*pow(diff,3)+b_t.at(index)*pow(diff,2)+c_t.at(index)*pow(diff,1)+d_t.at(index);
+        // X_coord.push_back(X);
+        // Y_coord.push_back(Y);
     };
 };
-*/

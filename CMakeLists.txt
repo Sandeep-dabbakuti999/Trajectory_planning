@@ -7,5 +7,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(LIBRARY_NAME LIBRARY)
 set(EXECUTABLE_NAME EXECUTABLE)
+
 add_subdirectory(DataSET)
 add_subdirectory(Source)

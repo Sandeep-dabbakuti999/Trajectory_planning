@@ -1,30 +1,24 @@
 #include <iostream>
-#include <thread>
-#include <fstream>
 #include <string>
+#include <thread>
 #include "Data.h"
 using namespace std;
 
 
 int main(){
-    
-    thread t1 ([] (){ 
-        string X_file="TestTrack/course_x.txt";
-        CartesianCoord<double> coordinate1;
-        coordinate1.load(X_file);
-        coordinate1.print();
-        std::cout<<"The loading1 is done"<<std::endl;
-    }); 
-    thread t2 ([] (){
-        string Y_file="TestTrack/course_y.txt";
-        CartesianCoord<double> coordinate2;
-        coordinate2.load(Y_file);
-        coordinate2.print();
-        std::cout<<"The loading2 is done"<<std::endl;
+   
+    CartesianCoord coordinate1,coordinate2;
+    thread t1 ([&coordinate1](){
+            coordinate1.load("../TestTrack/course_x.txt");
+            coordinate1.Resolution(coordinate1.t_index,10);
+            coordinate1.Interpolation();
+    });
+
+    thread t2 ([&coordinate2](){
+            coordinate2.load("../TestTrack/course_y.txt");
+            coordinate2.Resolution(coordinate2.t_index,10);
+            coordinate2.Interpolation();
     });
     t1.join();
     t2.join();
-    //coordinate.Resolution(10);
-    //std::cout<<"Resolution is improved"<<std::endl;
-    //coordinate.Interpolation();
 };
