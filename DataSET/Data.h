@@ -9,7 +9,7 @@ public:
 vector <double> t_index,a_t,b_t,c_t,d_t;
 vector <double> hrd,X_coord,Y_coord;
 void load(const string file_name);
-void Resolution(vector<double> index,int N);
+void Resolution(int N);
 void Interpolation(); 
 };
 #endif
