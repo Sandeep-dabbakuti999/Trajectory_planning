@@ -60,3 +60,4 @@ $$
 - **\($$\delta\$$):** Steering angle of the front wheels.
 - **\(L\):** Wheelbase of the vehicle (distance between the front and rear axles).
 - **\(a\):** Acceleration of the vehicle.
+## Results
