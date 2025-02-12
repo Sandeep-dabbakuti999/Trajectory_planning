@@ -50,14 +50,14 @@ int find_index(vector <double> indexes, int val){
 
 
 // The cubic spline interpolation between two GNSS coordinates 
-void CartesianCoord::Interpolation(){
+vector<double> CartesianCoord::Interpolation(){
     lock_guard<mutex> lock(mtx);
-     for(int i=0;i<hrd.size();i++){
+    vector<double> Coord;
+    for(int i=0;i<hrd.size();i++){
         int index=find_index(t_index,hrd.at(i));
         double diff=hrd.at(i)-t_index.at(index);
-        double X=a_t.at(index)*pow(diff,3)+b_t.at(index)*pow(diff,2)+c_t.at(index)*pow(diff,1)+d_t.at(index);
-        double Y=a_t.at(index)*pow(diff,3)+b_t.at(index)*pow(diff,2)+c_t.at(index)*pow(diff,1)+d_t.at(index);
-        X_coord.push_back(X);
-        Y_coord.push_back(Y); 
+        double C=a_t.at(index)*pow(diff,3)+b_t.at(index)*pow(diff,2)+c_t.at(index)*pow(diff,1)+d_t.at(index);
+        Coord.push_back(C); 
     };
+    return Coord;
 };
