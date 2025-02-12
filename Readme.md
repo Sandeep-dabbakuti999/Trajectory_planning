@@ -23,7 +23,7 @@ Model predictive control (MPC) works on the principle of predicting the future b
 The first input of the trajectory is applied to the system. The whole process is repeated again until the next control point.
 
 <div align="center">
-<img src="Images/MPC.jpg" width=360 height=270>
+<img src="Images/MPC.jpg" width=320 height=240>
 </div>
 
 ## Kinematic Vehicle Model
