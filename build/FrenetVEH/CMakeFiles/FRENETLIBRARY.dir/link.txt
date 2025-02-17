@@ -1,0 +1,2 @@
+/usr/bin/ar qc libFRENETLIBRARY.a CMakeFiles/FRENETLIBRARY.dir/Frenet.cpp.o
+/usr/bin/ranlib libFRENETLIBRARY.a

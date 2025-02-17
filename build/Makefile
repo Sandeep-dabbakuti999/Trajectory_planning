@@ -117,17 +117,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LIBRARY
+# Target rules for targets named DATALIBRARY
 
 # Build rule for target.
-LIBRARY: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LIBRARY
-.PHONY : LIBRARY
+DATALIBRARY: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DATALIBRARY
+.PHONY : DATALIBRARY
 
 # fast build rule for target.
-LIBRARY/fast:
-	$(MAKE) $(MAKESILENT) -f DataSET/CMakeFiles/LIBRARY.dir/build.make DataSET/CMakeFiles/LIBRARY.dir/build
-.PHONY : LIBRARY/fast
+DATALIBRARY/fast:
+	$(MAKE) $(MAKESILENT) -f DataSET/CMakeFiles/DATALIBRARY.dir/build.make DataSET/CMakeFiles/DATALIBRARY.dir/build
+.PHONY : DATALIBRARY/fast
+
+#=============================================================================
+# Target rules for targets named FRENETLIBRARY
+
+# Build rule for target.
+FRENETLIBRARY: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FRENETLIBRARY
+.PHONY : FRENETLIBRARY
+
+# fast build rule for target.
+FRENETLIBRARY/fast:
+	$(MAKE) $(MAKESILENT) -f FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/build.make FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/build
+.PHONY : FRENETLIBRARY/fast
 
 #=============================================================================
 # Target rules for targets named EXECUTABLE
@@ -150,8 +163,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... DATALIBRARY"
 	@echo "... EXECUTABLE"
-	@echo "... LIBRARY"
+	@echo "... FRENETLIBRARY"
 .PHONY : help
 
 

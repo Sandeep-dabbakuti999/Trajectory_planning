@@ -1,2 +1,2 @@
-add_library(${LIBRARY_NAME} STATIC "Data.cpp")
-target_include_directories(${LIBRARY_NAME} PUBLIC "./")
+add_library(${DATA_LIBRARY} STATIC "Data.cpp")
+target_include_directories(${DATA_LIBRARY} PUBLIC "./")

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/EXECUTABLE.dir/main.cpp.o -o EXECUTABLE  ../DataSET/libLIBRARY.a 
+/usr/bin/c++ CMakeFiles/EXECUTABLE.dir/main.cpp.o -o EXECUTABLE  ../DataSET/libDATALIBRARY.a ../FrenetVEH/libFRENETLIBRARY.a 

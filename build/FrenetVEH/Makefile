@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sandeep/Trajectory_planning/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sandeep/Trajectory_planning/build/CMakeFiles /home/sandeep/Trajectory_planning/build/DataSET//CMakeFiles/progress.marks
-	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DataSET/all
+	cd /home/sandeep/Trajectory_planning/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sandeep/Trajectory_planning/build/CMakeFiles /home/sandeep/Trajectory_planning/build/FrenetVEH//CMakeFiles/progress.marks
+	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FrenetVEH/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sandeep/Trajectory_planning/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DataSET/clean
+	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FrenetVEH/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DataSET/preinstall
+	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FrenetVEH/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DataSET/preinstall
+	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FrenetVEH/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -117,42 +117,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-DataSET/CMakeFiles/DATALIBRARY.dir/rule:
-	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DataSET/CMakeFiles/DATALIBRARY.dir/rule
-.PHONY : DataSET/CMakeFiles/DATALIBRARY.dir/rule
+FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/rule:
+	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/rule
+.PHONY : FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/rule
 
 # Convenience name for target.
-DATALIBRARY: DataSET/CMakeFiles/DATALIBRARY.dir/rule
-.PHONY : DATALIBRARY
+FRENETLIBRARY: FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/rule
+.PHONY : FRENETLIBRARY
 
 # fast build rule for target.
-DATALIBRARY/fast:
-	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f DataSET/CMakeFiles/DATALIBRARY.dir/build.make DataSET/CMakeFiles/DATALIBRARY.dir/build
-.PHONY : DATALIBRARY/fast
+FRENETLIBRARY/fast:
+	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/build.make FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/build
+.PHONY : FRENETLIBRARY/fast
 
-Data.o: Data.cpp.o
-.PHONY : Data.o
+Frenet.o: Frenet.cpp.o
+.PHONY : Frenet.o
 
 # target to build an object file
-Data.cpp.o:
-	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f DataSET/CMakeFiles/DATALIBRARY.dir/build.make DataSET/CMakeFiles/DATALIBRARY.dir/Data.cpp.o
-.PHONY : Data.cpp.o
+Frenet.cpp.o:
+	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/build.make FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/Frenet.cpp.o
+.PHONY : Frenet.cpp.o
 
-Data.i: Data.cpp.i
-.PHONY : Data.i
+Frenet.i: Frenet.cpp.i
+.PHONY : Frenet.i
 
 # target to preprocess a source file
-Data.cpp.i:
-	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f DataSET/CMakeFiles/DATALIBRARY.dir/build.make DataSET/CMakeFiles/DATALIBRARY.dir/Data.cpp.i
-.PHONY : Data.cpp.i
+Frenet.cpp.i:
+	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/build.make FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/Frenet.cpp.i
+.PHONY : Frenet.cpp.i
 
-Data.s: Data.cpp.s
-.PHONY : Data.s
+Frenet.s: Frenet.cpp.s
+.PHONY : Frenet.s
 
 # target to generate assembly for a file
-Data.cpp.s:
-	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f DataSET/CMakeFiles/DATALIBRARY.dir/build.make DataSET/CMakeFiles/DATALIBRARY.dir/Data.cpp.s
-.PHONY : Data.cpp.s
+Frenet.cpp.s:
+	cd /home/sandeep/Trajectory_planning/build && $(MAKE) $(MAKESILENT) -f FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/build.make FrenetVEH/CMakeFiles/FRENETLIBRARY.dir/Frenet.cpp.s
+.PHONY : Frenet.cpp.s
 
 # Help Target
 help:
@@ -162,10 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... DATALIBRARY"
-	@echo "... Data.o"
-	@echo "... Data.i"
-	@echo "... Data.s"
+	@echo "... FRENETLIBRARY"
+	@echo "... Frenet.o"
+	@echo "... Frenet.i"
+	@echo "... Frenet.s"
 .PHONY : help
 
 

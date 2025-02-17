@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDATALIBRARY.a CMakeFiles/DATALIBRARY.dir/Data.cpp.o
+/usr/bin/ranlib libDATALIBRARY.a

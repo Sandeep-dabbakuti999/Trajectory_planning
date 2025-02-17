@@ -2,7 +2,6 @@
 #define FRENET_H
 #include <iostream>
 #include <vector>
-#include "Data.h"
 using namespace std;
 class Frenet{
     public:

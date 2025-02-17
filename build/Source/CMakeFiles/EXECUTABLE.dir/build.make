@@ -92,7 +92,8 @@ EXECUTABLE_EXTERNAL_OBJECTS =
 
 Source/EXECUTABLE: Source/CMakeFiles/EXECUTABLE.dir/main.cpp.o
 Source/EXECUTABLE: Source/CMakeFiles/EXECUTABLE.dir/build.make
-Source/EXECUTABLE: DataSET/libLIBRARY.a
+Source/EXECUTABLE: DataSET/libDATALIBRARY.a
+Source/EXECUTABLE: FrenetVEH/libFRENETLIBRARY.a
 Source/EXECUTABLE: Source/CMakeFiles/EXECUTABLE.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sandeep/Trajectory_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable EXECUTABLE"
 	cd /home/sandeep/Trajectory_planning/build/Source && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/EXECUTABLE.dir/link.txt --verbose=$(VERBOSE)

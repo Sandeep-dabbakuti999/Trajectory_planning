@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/sandeep/Trajectory_planning/DataSET/. -I/home/sandeep/Trajectory_planning/FrenetVEH/.
+CXX_INCLUDES = -I/home/sandeep/Trajectory_planning/FrenetVEH/.
 
 CXX_FLAGS = -std=c++17
 
