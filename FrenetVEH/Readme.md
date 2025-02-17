@@ -7,3 +7,13 @@ S => Longitudinal displacement along the curve
 
 
 D => Lateral Displacement along the curve
+
+
+<div align="center">
+<img src="Images/ref_path.png" width=360 height=270>
+</div>
+
+
+<div align="center">
+<img src="Images/f_path.png" width=360 height=270>
+</div>
