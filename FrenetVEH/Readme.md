@@ -4,4 +4,6 @@ The frame, which locally describes one point on a curve, changes orientation alo
 
 
 S => Longitudinal displacement along the curve 
+
+
 D => Lateral Displacement along the curve
