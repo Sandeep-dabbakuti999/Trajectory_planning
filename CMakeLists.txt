@@ -7,9 +7,11 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 set(DATA_LIBRARY DATALIBRARY)
 set(FRENET_LIBRARY FRENETLIBRARY)
+set(CART_FRENET CFLIBRARY)
 
 set(EXECUTABLE_NAME EXECUTABLE)
 
 add_subdirectory(DataSET)
 add_subdirectory(FrenetVEH)
+add_subdirectory(Frenet-Cart)
 add_subdirectory(Source)

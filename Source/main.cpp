@@ -31,4 +31,6 @@ int main(){
     double s_l=Convertcoord.Long_displacement(inc,near_p);
     double d_l=Convertcoord.Lateral_displacement(C_x,C_y,X_coord.at(near_p),Y_coord.at(near_p));
     cout<<"The s and d of the car current location"<<" "<<s_l<<" "<<d_l<<endl;
+    
+    
 };

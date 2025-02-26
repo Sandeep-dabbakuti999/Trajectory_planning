@@ -1,0 +1,2 @@
+/usr/bin/ar qc libCFLIBRARY.a CMakeFiles/CFLIBRARY.dir/Fre_Cart.cpp.o
+/usr/bin/ranlib libCFLIBRARY.a
