@@ -6,17 +6,18 @@
 
 using namespace std;
 
-vector<vector<double>> Frenet_Cart::V_Model(vector<vector<double>> SD_o,double V_x,double l,double alpha_o,double D_T,double K_R,double dt,double K_r,double Yn){
-    double s_n{0},d_n{0},alpha_n{0},ds_n{0},sd_n{0},dd_n{0},dds_n{0};
+vector<vector<double>> Frenet_Cart::V_Model(vector<vector<double>> SD_old,double V_x,double l,double alpha_old,double D_T,double K_R,double dt,double K_r,double Yn){
+    double s_new{0},d_new{0},alpha_new{0},ds_n{0},sd_n{0},dd_n{0},dds_n{0};
     vector<vector<double>> opt;
-    s_n=SD_o[1][1]+((V_x*cos(alpha_o))/(1-K_r*SD_o[1][2]))*dt;
-    d_n=SD_o[1][2]+V_x*sin(alpha_o)*dt;
-    alpha_n=alpha_o+(((V_x/l)*tan(Yn)-(V_x*cos(D_T)))/(1-K_r*SD_o[1][2]))*dt;
-    ds_n=SD_o[1][3]+(1-K_r*SD_o[1][2])*tan(alpha_o)*dt;
-    sd_n=SD_o[1][4]+s_n*dt;
-    dd_n=SD_o[1][5]+d_n*dt;
-    dds_n=SD_o[1][6]+ds_n*dt;
-    opt.push_back({s_n,d_n,alpha_n,ds_n});
+    s_new=SD_old[1][1]+((V_x*cos(alpha_old))/(1-K_r*SD_old[1][2]))*dt;
+    d_new=SD_old[1][2]+V_x*sin(alpha_old)*dt;
+    alpha_new=alpha_old+(((V_x/l)*tan(Yn)-(V_x*cos(D_T)))/(1-K_r*SD_old[1][2]))*dt;
+    ds_n=SD_old[1][3]+((1-K_r*SD_old[1][2])*tan(alpha_old)*dt);
+    sd_n=SD_old[1][4]+s_new*dt;
+    dd_n=SD_old[1][5]+d_new*dt;
+    dds_n=SD_old[1][6]+ds_n*dt;
+
+    opt.push_back({s_new,d_new,alpha_new,ds_n,sd_n,dd_n,dds_n});
     return opt;
 };
 
