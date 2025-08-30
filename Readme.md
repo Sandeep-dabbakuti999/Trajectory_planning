@@ -1,4 +1,4 @@
-# OPtimization-Based Trajectory Planning and MPC-Tracker working along with a Reinforcement Learning planner
+# OPtimization-Based Trajectory Planning and MPC-Tracker and LSTM Neural network for Risk assesment
 ### Trajectory Planning 
 Trajectory planning is an essential task of autonomous vehicles. It serves as a path that the vehicle will follow using a controller to reach a destination.
 ### Optimization
